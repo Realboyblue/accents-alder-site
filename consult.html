@@ -48,16 +48,20 @@
 
         <div class="card">
           <form
-            class="form"
-            name="consult"
-            method="POST"
-            action="/thanks"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            enctype="multipart/form-data">
-
-            <!-- Netlify requires this to match the form name -->
-            <input type="hidden" name="form-name" value="consult" />
+                class="form"
+                name="consult"
+                method="POST"
+                action="/"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                enctype="multipart/form-data">
+              
+                <input type="hidden" name="form-name" value="consult" />
+                <input type="hidden" name="redirect" value="/thanks" />
+              
+                <p style="display:none">
+                  <label><input name="bot-field" /></label>
+                </p>
 
             <!-- Honeypot field (spam protection). Must exist when using data-netlify-honeypot -->
             <p style="display:none">
