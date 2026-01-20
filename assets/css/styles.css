@@ -287,14 +287,14 @@ select optgroup{
 
 
 /* About */
-.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:start}
+.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch}
 @media (max-width:850px){.about-grid{grid-template-columns:1fr}}
-.about-card{padding:20px}
+.about-card{padding:20px;height:100%;display:flex;flex-direction:column}
 .about-points{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px}
 .about-points li{display:flex;gap:10px;align-items:flex-start;color:var(--muted)}
 .about-points .dot{width:14px;height:14px;flex:0 0 14px;background-image:url("../img/icons/leaf-16x16.png");background-repeat:no-repeat;background-position:center;background-size:contain;opacity:.9;margin-top:4px}
 
 
-.about-note{margin-top:14px;color:rgba(255,255,255,.72);font-size:14px}
+.about-note{margin-top:auto;padding-top:14px;color:rgba(255,255,255,.72);font-size:14px}
 .about-note a{color:var(--gold);text-decoration:none}
 .about-note a:hover{text-decoration:underline}
