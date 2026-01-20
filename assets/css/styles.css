@@ -34,18 +34,18 @@ body::after{
   content:"";
   position:fixed;
   left:0; right:0; bottom:0;
-  height:220px;
+  height:260px;
   background-image:url("../img/wainscot-bg.png");
   background-repeat:repeat-x;
   background-position:bottom center;
-  background-size:auto 220px;
-  opacity:.14;
+  background-size:auto 260px;
+  opacity:.28;
   pointer-events:none;
   z-index:0;
 }
 .topbar, header, main, footer{position:relative; z-index:1;}
 @media (max-width:650px){
-  body::after{height:160px; background-size:auto 160px; opacity:.12;}
+  body::after{height:190px; background-size:auto 190px; opacity:.22;}
 }
 
 
