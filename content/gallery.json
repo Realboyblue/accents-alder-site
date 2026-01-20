@@ -1,0 +1,30 @@
+﻿{
+  "items": [
+    {
+      "title": "Wainscoting stair wall",
+      "desc": "Clean panel spacing with refined finish.",
+      "category": "wainscoting",
+      "image": "assets/img/gallery/wainscot_01.jpg"
+    },
+    {
+      "title": "Board & batten feature",
+      "desc": "Modern vertical lines with crisp reveals.",
+      "category": "board-batten",
+      "image": "assets/img/gallery/bnb_01.jpg"
+    },
+    {
+      "title": "Crown detail",
+      "desc": "Adds character and height to the room.",
+      "category": "crown",
+      "image": "assets/img/gallery/crown_01.jpg"
+    }
+  ],
+  "categories": [
+    {"key":"all","label":"All"},
+    {"key":"wainscoting","label":"Wainscoting"},
+    {"key":"board-batten","label":"Board & Batten"},
+    {"key":"trim","label":"Trim"},
+    {"key":"crown","label":"Crown"},
+    {"key":"paint","label":"Interior Paint"}
+  ]
+}

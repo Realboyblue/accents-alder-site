@@ -1,0 +1,29 @@
+﻿{
+  "currency": "CAD",
+  "services": [
+    {
+      "name": "Wainscoting",
+      "tagline": "Classic detail that elevates hallways, dining rooms, and stairs.",
+      "highlights": ["Layout & spacing guidance", "Crisp reveals and returns", "Paint-ready finishing"],
+      "cta": "Book a consult"
+    },
+    {
+      "name": "Board & Batten",
+      "tagline": "Modern structure and texture—perfect for feature walls.",
+      "highlights": ["Design mock-up guidance", "Level lines and clean symmetry", "Durable finish prep"],
+      "cta": "Request a consult"
+    },
+    {
+      "name": "Trim & Crown Moulding",
+      "tagline": "Baseboards, casings, crown, and transitions—measured precisely.",
+      "highlights": ["Consistent profiles throughout", "Tight corners & joints", "Paint-grade or stain-grade options"],
+      "cta": "Get started"
+    },
+    {
+      "name": "Interior Paint",
+      "tagline": "Finishing support to complete the look after trim upgrades.",
+      "highlights": ["Trim-focused prep", "Smooth finish", "Touch-ups and protection"],
+      "cta": "Ask about paint"
+    }
+  ]
+}

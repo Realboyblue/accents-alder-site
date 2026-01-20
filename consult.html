@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book a Consult | Accents & Alder</title>
+  <meta name="description" content="Book a design and trim consult with Accents & Alder in Calgary, AB." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html"><span class="mark"></span><span>ACCENTS &amp; ALDER</span></a>
+        <div class="navlinks">
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="consult.html" class="btn btn-primary">Book Consult</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="section">
+    <div class="container">
+      <div class="grid grid-2">
+        <div>
+          <h1 style="margin:0 0 10px">Book a design &amp; trim consult</h1>
+          <p class="lead" style="margin:0 0 18px">
+            Share a few details about your space. We’ll reply within 1 business day.
+          </p>
+
+          <div class="card">
+            <div class="small" style="font-weight:900;color:var(--text)">What we’ll cover</div>
+            <ul style="margin:10px 0 0;padding-left:18px;color:var(--muted);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;">
+              <li>Style direction and trim options</li>
+              <li>Scope, layout, and finishing approach</li>
+              <li>Scheduling and next steps</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <form class="form" name="consult" method="POST" data-netlify="true" enctype="multipart/form-data" action="/thanks.html">
+            <input type="hidden" name="form-name" value="consult" />
+
+            <div class="field">
+              <label>Name</label>
+              <input name="name" required />
+            </div>
+
+            <div class="grid grid-2">
+              <div class="field">
+                <label>Email</label>
+                <input type="email" name="email" required />
+              </div>
+              <div class="field">
+                <label>Phone</label>
+                <input name="phone" />
+              </div>
+            </div>
+
+            <div class="grid grid-2">
+              <div class="field">
+                <label>City / neighborhood</label>
+                <input name="location" required />
+              </div>
+              <div class="field">
+                <label>Project size</label>
+                <select name="size" required>
+                  <option value="">Select…</option>
+                  <option>1 room</option>
+                  <option>2–4 rooms</option>
+                  <option>Whole floor</option>
+                  <option>Whole home</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>What are you interested in?</label>
+              <select name="service" required>
+                <option value="">Select…</option>
+                <option>Wainscoting</option>
+                <option>Board & Batten</option>
+                <option>Trim & Crown Moulding</option>
+                <option>Interior Paint</option>
+                <option>Not sure</option>
+              </select>
+            </div>
+
+            <div class="grid grid-2">
+              <div class="field">
+                <label>New build or renovation?</label>
+                <select name="build_type">
+                  <option>Renovation</option>
+                  <option>New build</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Paint-grade or stain-grade?</label>
+                <select name="finish">
+                  <option>Paint-grade</option>
+                  <option>Stain-grade</option>
+                  <option>Not sure</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Upload photos (optional)</label>
+              <input type="file" name="photos" accept="image/*" multiple />
+              <div class="help">Photos help us understand your space and recommend options faster.</div>
+            </div>
+
+            <div class="field">
+              <label>Tell us about your vision</label>
+              <textarea name="notes" placeholder="Rooms, style you like, timing, anything to match…"></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send request</button>
+            <div class="help">By submitting, you agree we can contact you about this project.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
