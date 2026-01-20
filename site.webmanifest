@@ -1,0 +1,20 @@
+{
+  "name": "Accents & Alder",
+  "short_name": "Accents & Alder",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#1c3b36",
+  "theme_color": "#1c3b36",
+  "icons": [
+    {
+      "src": "assets/img/icons/leaf-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icons/leaf-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
