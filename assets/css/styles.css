@@ -64,7 +64,9 @@ img{max-width:100%;display:block}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px}
 .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:1px}
 .mark{
+  display:inline-block;
   width:34px;height:34px;border-radius:10px;
+  flex:0 0 34px;
   border:1px solid rgba(212,177,95,.5);
   background:radial-gradient(circle at 30% 30%, rgba(212,177,95,.35), rgba(20,58,53,.2));
 }
@@ -239,15 +241,38 @@ select optgroup{
 .footer-brand{display:flex;align-items:center;gap:12px}
 .footer-name{font-weight:900;color:var(--text);letter-spacing:.8px}
 .footer-tagline{margin-top:8px}
-.footer-links{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
-.footer-links a{color:var(--muted)}
+.footer-links{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid rgba(212,177,95,.18);
+  display:flex;
+  flex-wrap:wrap;
+  gap:0;
+  justify-content:flex-end;
+}
+.footer-links a{
+  color:var(--muted);
+  padding:4px 0;
+}
 .footer-links a:hover{color:var(--text)}
+.footer-links a + a{
+  margin-left:14px;
+  position:relative;
+}
+.footer-links a + a:before{
+  content:"•";
+  position:absolute;
+  left:-9px;
+  color:rgba(212,177,95,.65);
+}
 @media (max-width:700px){
   .footer-grid{grid-template-columns:1fr}
   .footer-right{text-align:left}
   .footer-links{justify-content:flex-start}
 }
 
+
+.footer .mark{width:28px;height:28px;border-radius:9px;flex:0 0 28px}
 .footer{
   padding:44px 0;border-top:1px solid rgba(212,177,95,.18);
   color:var(--muted);
