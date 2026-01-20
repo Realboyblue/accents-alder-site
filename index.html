@@ -126,14 +126,78 @@
           <div class="small" style="margin-top:8px">“Where detail meets design”</div>
           <div class="small">Calgary, AB • © <span data-year></span></div>
         </div>
-        <div style="text-align:right">
-          <div class="small">Email: hello@yourdomain.com</div>
-          <div class="small">Phone: (###) ###-####</div>
-        </div>
+          <div style="text-align:right">
+            <div class="small">
+              Email:
+              <a class="js-email"
+                 data-user="accentsandalder"
+                 data-domain="gmail"
+                 data-tld="com"
+                 href="#"
+                 rel="nofollow"
+                 aria-label="Email Accents & Alder"></a>
+              <noscript>accentsandalder [at] gmail [dot] com</noscript>
+            </div>
+          
+            <div class="small">
+              Phone:
+              <a class="js-phone"
+                 data-phone="4036181841"
+                 href="#"
+                 rel="nofollow"
+                 aria-label="Call Accents & Alder"></a>
+              <noscript>(403) 618-1841</noscript>
+            </div>
+          </div>
+
       </div>
     </div>
   </footer>
 
   <script src="assets/js/site.js"></script>
+<script>
+(function () {
+  function formatPhone(digits) {
+    // (403) 618-1841 for 10-digit numbers; otherwise just return digits
+    return (digits || '').replace(/^(\d{3})(\d{3})(\d{4})$/, '($1) $2-$3');
+  }
+
+  // Emails (supports multiple)
+  var emailEls = document.querySelectorAll('.js-email');
+  for (var i = 0; i < emailEls.length; i++) {
+    (function (el) {
+      // Prevent "#" from jumping before it’s populated
+      el.addEventListener('click', function (e) {
+        if (el.getAttribute('href') === '#') e.preventDefault();
+      });
+
+      var user = el.getAttribute('data-user') || '';
+      var domain = el.getAttribute('data-domain') || '';
+      var tld = el.getAttribute('data-tld') || '';
+      if (user && domain && tld) {
+        var addr = user + '@' + domain + '.' + tld;
+        el.textContent = addr;
+        el.href = 'mailto:' + addr;
+      }
+    })(emailEls[i]);
+  }
+
+  // Phones (supports multiple)
+  var phoneEls = document.querySelectorAll('.js-phone');
+  for (var j = 0; j < phoneEls.length; j++) {
+    (function (el) {
+      el.addEventListener('click', function (e) {
+        if (el.getAttribute('href') === '#') e.preventDefault();
+      });
+
+      var digits = (el.getAttribute('data-phone') || '').replace(/\D/g, '');
+      if (digits) {
+        el.textContent = formatPhone(digits);
+        el.href = 'tel:' + digits;
+      }
+    })(phoneEls[j]);
+  }
+})();
+</script>
 </body>
 </html>
