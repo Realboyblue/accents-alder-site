@@ -47,106 +47,102 @@
         </div>
 
         <div class="card">
-          <form
-                class="form"
-                name="consult"
-                method="POST"
-                action="/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                enctype="multipart/form-data">
-              
-                <input type="hidden" name="form-name" value="consult" />
-                <input type="hidden" name="redirect" value="/thanks" />
-              
-                <p style="display:none">
-                  <label><input name="bot-field" /></label>
-                </p>
-
-            <!-- Honeypot field (spam protection). Must exist when using data-netlify-honeypot -->
-            <p style="display:none">
-              <label>Don’t fill this out: <input name="bot-field" /></label>
-            </p>
-
+        <form
+          class="form"
+          name="consult"
+          method="POST"
+          action="/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          enctype="multipart/form-data">
+        
+          <input type="hidden" name="form-name" value="consult" />
+          <input type="hidden" name="redirect" value="/thanks.html" />
+        
+          <p style="display:none">
+            <label><input name="bot-field" /></label>
+          </p>
+        
+          <div class="field">
+            <label>Name</label>
+            <input name="name" required />
+          </div>
+        
+          <div class="grid grid-2">
             <div class="field">
-              <label>Name</label>
-              <input name="name" required />
+              <label>Email</label>
+              <input type="email" name="email" required />
             </div>
-
-            <div class="grid grid-2">
-              <div class="field">
-                <label>Email</label>
-                <input type="email" name="email" required />
-              </div>
-              <div class="field">
-                <label>Phone</label>
-                <input name="phone" />
-              </div>
-            </div>
-
-            <div class="grid grid-2">
-              <div class="field">
-                <label>City / neighborhood</label>
-                <input name="location" required />
-              </div>
-              <div class="field">
-                <label>Project size</label>
-                <select name="size" required>
-                  <option value="">Select…</option>
-                  <option>1 room</option>
-                  <option>2–4 rooms</option>
-                  <option>Whole floor</option>
-                  <option>Whole home</option>
-                  <option>Not sure</option>
-                </select>
-              </div>
-            </div>
-
             <div class="field">
-              <label>What are you interested in?</label>
-              <select name="service" required>
+              <label>Phone</label>
+              <input name="phone" />
+            </div>
+          </div>
+        
+          <div class="grid grid-2">
+            <div class="field">
+              <label>City / neighborhood</label>
+              <input name="location" required />
+            </div>
+            <div class="field">
+              <label>Project size</label>
+              <select name="size" required>
                 <option value="">Select…</option>
-                <option>Wainscoting</option>
-                <option>Board &amp; Batten</option>
-                <option>Trim &amp; Crown Moulding</option>
-                <option>Interior Paint</option>
+                <option>1 room</option>
+                <option>2–4 rooms</option>
+                <option>Whole floor</option>
+                <option>Whole home</option>
                 <option>Not sure</option>
               </select>
             </div>
-
-            <div class="grid grid-2">
-              <div class="field">
-                <label>New build or renovation?</label>
-                <select name="build_type">
-                  <option>Renovation</option>
-                  <option>New build</option>
-                  <option>Not sure</option>
-                </select>
-              </div>
-              <div class="field">
-                <label>Paint-grade or stain-grade?</label>
-                <select name="finish">
-                  <option>Paint-grade</option>
-                  <option>Stain-grade</option>
-                  <option>Not sure</option>
-                </select>
-              </div>
-            </div>
-
+          </div>
+        
+          <div class="field">
+            <label>What are you interested in?</label>
+            <select name="service" required>
+              <option value="">Select…</option>
+              <option>Wainscoting</option>
+              <option>Board &amp; Batten</option>
+              <option>Trim &amp; Crown Moulding</option>
+              <option>Interior Paint</option>
+              <option>Not sure</option>
+            </select>
+          </div>
+        
+          <div class="grid grid-2">
             <div class="field">
-              <label>Upload photos (optional)</label>
-              <input type="file" name="photos" accept="image/*" multiple />
-              <div class="help">Photos help us understand your space and recommend options faster.</div>
+              <label>New build or renovation?</label>
+              <select name="build_type">
+                <option>Renovation</option>
+                <option>New build</option>
+                <option>Not sure</option>
+              </select>
             </div>
-
             <div class="field">
-              <label>Tell us about your vision</label>
-              <textarea name="notes" placeholder="Rooms, style you like, timing, anything to match…"></textarea>
+              <label>Paint-grade or stain-grade?</label>
+              <select name="finish">
+                <option>Paint-grade</option>
+                <option>Stain-grade</option>
+                <option>Not sure</option>
+              </select>
             </div>
+          </div>
+        
+          <div class="field">
+            <label>Upload photos (optional)</label>
+            <input type="file" name="photos" accept="image/*" multiple />
+            <div class="help">Photos help us understand your space and recommend options faster.</div>
+          </div>
+        
+          <div class="field">
+            <label>Tell us about your vision</label>
+            <textarea name="notes" placeholder="Rooms, style you like, timing, anything to match…"></textarea>
+          </div>
+        
+          <button class="btn btn-primary" type="submit">Send request</button>
+          <div class="help">By submitting, you agree we can contact you about this project.</div>
+        </form>
 
-            <button class="btn btn-primary" type="submit">Send request</button>
-            <div class="help">By submitting, you agree we can contact you about this project.</div>
-          </form>
         </div>
       </div>
     </div>
