@@ -4,22 +4,21 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Gallery | Accents & Alder</title>
-  <meta name="description" content="View our latest project gallery on Instagram." />
-
-  <link rel="canonical" href="https://www.instagram.com/accents_and_alder_design/" />
-  <meta http-equiv="refresh" content="0; url=https://www.instagram.com/accents_and_alder_design/" />
-
+  <meta name="description" content="Browse recent projects from Accents & Alder. Our latest work is posted on Instagram." />
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <div class="topbar">
     <div class="container">
       <div class="nav">
-        <a class="brand" href="index.html"><span class="mark"></span><span>ACCENTS &amp; ALDER</span></a>
+        <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span><span>ACCENTS &amp; ALDER</span></a>
         <div class="navlinks">
           <a href="services.html">Services</a>
-          <a href="https://www.instagram.com/accents_and_alder_design/" target="_blank" rel="noopener">Gallery</a>
-          <a href="consult.html" class="btn btn-primary">Book Consult</a>
+          <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+          <a href="service-area.html">Service Area</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="consult.html" class="btn btn-primary">Book a Consult</a>
         </div>
       </div>
     </div>
@@ -27,17 +26,97 @@
 
   <main class="section">
     <div class="container">
-      <h1 style="margin:0 0 10px">Gallery</h1>
-      <p class="lead" style="margin:0 0 16px">Redirecting to our Instagram gallery…</p>
-      <p class="small">
-        If you aren’t redirected,
-        <a href="https://www.instagram.com/accents_and_alder_design/">tap here</a>.
+      <h1 class="page-title">Gallery</h1>
+      <p class="lead page-lead">
+        Our most up-to-date project photos are on Instagram. We’re also building an on-site gallery for easier browsing.
       </p>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="big">View the latest projects</div>
+          <div class="small" style="margin-top:8px">
+            Opens Instagram in a new tab.
+          </div>
+
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://www.instagram.com/accents_and_alder_design/" target="_blank" rel="noopener nofollow">
+              Open Instagram Gallery
+            </a>
+            <a class="btn" href="consult.html">Book a Consult</a>
+          </div>
+
+          <hr class="sep" />
+
+          <div class="small" style="font-weight:900;color:var(--text)">Prefer not to use Instagram?</div>
+          <div class="small">Send a consult request and we can share relevant project examples directly.</div>
+        </div>
+
+        <div class="card">
+          <div class="big">What you’ll see</div>
+          <div class="small" style="margin-top:8px">Wainscoting • Board &amp; Batten • Trim &amp; Crown • Interior Paint</div>
+          <hr class="sep" />
+          <div class="small" style="font-weight:900;color:var(--text)">On-site gallery</div>
+          <div class="small">We’re curating a cleaner, faster gallery here soon (organized by room and project type).</div>
+        </div>
+      </div>
     </div>
   </main>
 
-  <script>
-    window.location.replace("https://www.instagram.com/accents_and_alder_design/");
-  </script>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-left">
+          <div class="footer-brand">
+            <span class="mark" aria-hidden="true"></span>
+            <div class="footer-name">ACCENTS &amp; ALDER</div>
+          </div>
+          <div class="small footer-tagline">“Where detail meets design”</div>
+          <div class="small">Calgary, AB • © <span data-year></span></div>
+        </div>
+
+        <div class="footer-right">
+          <div class="small">
+            Email:
+            <a class="js-email"
+               data-user="accentsandalder"
+               data-domain="gmail"
+               data-tld="com"
+               href="#"
+               rel="nofollow"
+               aria-label="Email Accents &amp; Alder"></a>
+            <noscript>accentsandalder [at] gmail [dot] com</noscript>
+          </div>
+
+          <div class="small">
+            Phone:
+            <a class="js-phone"
+               data-phone="4036181841"
+               href="#"
+               rel="nofollow"
+               aria-label="Call Accents &amp; Alder"></a>
+            <noscript>(403) 618-1841</noscript>
+          </div>
+
+          <div class="small">
+            Instagram:
+            <a href="https://www.instagram.com/accents_and_alder_design/" target="_blank" rel="noopener nofollow">
+              @accents_and_alder_design
+            </a>
+          </div>
+
+          <div class="footer-links">
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="service-area.html">Service Area</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+            <a href="consult.html">Book a Consult</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/site.js"></script>
+
 </body>
 </html>
