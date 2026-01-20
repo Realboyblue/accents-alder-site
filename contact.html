@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -10,11 +10,11 @@
   <div class="topbar">
     <div class="container">
       <div class="nav">
-        <a class="brand" href="index.html"><span class="mark"></span><span>ACCENTS &amp; ALDER</span></a>
+        <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span><span>ACCENTS &amp; ALDER</span></a>
         <div class="navlinks">
           <a href="services.html">Services</a>
           <a href="gallery.html">Gallery</a>
-          <a href="consult.html" class="btn btn-primary">Book Consult</a>
+          <a href="consult.html" class="btn btn-primary">Book a Consult</a>
         </div>
       </div>
     </div>
@@ -28,15 +28,36 @@
       <div class="grid grid-2">
         <div class="card">
           <div class="small" style="font-weight:900;color:var(--text)">Email</div>
-          <div class="small">hello@yourdomain.com</div>
+          <div class="small">
+            <a class="js-email"
+               data-user="accentsandalder"
+               data-domain="gmail"
+               data-tld="com"
+               href="#"
+               rel="nofollow"
+               aria-label="Email Accents &amp; Alder"></a>
+            <noscript>accentsandalder [at] gmail [dot] com</noscript>
+          </div>
+
           <hr class="sep" />
+
           <div class="small" style="font-weight:900;color:var(--text)">Phone</div>
-          <div class="small">(###) ###-####</div>
+          <div class="small">
+            <a class="js-phone"
+               data-phone="4036181841"
+               href="#"
+               rel="nofollow"
+               aria-label="Call Accents &amp; Alder"></a>
+            <noscript>(403) 618-1841</noscript>
+          </div>
+
           <hr class="sep" />
+
           <div class="small" style="font-weight:900;color:var(--text)">Best next step</div>
           <div class="small">For project requests, the consult form is best.</div>
+
           <div style="margin-top:12px">
-            <a class="btn btn-primary" href="consult.html">Book consult</a>
+            <a class="btn btn-primary" href="consult.html">Book a Consult</a>
           </div>
         </div>
 
@@ -52,5 +73,47 @@
   </main>
 
   <script src="assets/js/site.js"></script>
+
+  <!-- Bot-resistant email/phone render (supports multiple elements per page) -->
+  <script>
+  (function () {
+    function formatPhone(digits) {
+      return (digits || '').replace(/^(\d{3})(\d{3})(\d{4})$/, '($1) $2-$3');
+    }
+
+    var emailEls = document.querySelectorAll('.js-email');
+    for (var i = 0; i < emailEls.length; i++) {
+      (function (el) {
+        el.addEventListener('click', function (e) {
+          if (el.getAttribute('href') === '#') e.preventDefault();
+        });
+
+        var user = el.getAttribute('data-user') || '';
+        var domain = el.getAttribute('data-domain') || '';
+        var tld = el.getAttribute('data-tld') || '';
+        if (user && domain && tld) {
+          var addr = user + '@' + domain + '.' + tld;
+          el.textContent = addr;
+          el.href = 'mailto:' + addr;
+        }
+      })(emailEls[i]);
+    }
+
+    var phoneEls = document.querySelectorAll('.js-phone');
+    for (var j = 0; j < phoneEls.length; j++) {
+      (function (el) {
+        el.addEventListener('click', function (e) {
+          if (el.getAttribute('href') === '#') e.preventDefault();
+        });
+
+        var digits = (el.getAttribute('data-phone') || '').replace(/\D/g, '');
+        if (digits) {
+          el.textContent = formatPhone(digits);
+          el.href = 'tel:' + digits;
+        }
+      })(phoneEls[j]);
+    }
+  })();
+  </script>
 </body>
 </html>
