@@ -43,13 +43,13 @@
     {
       "title": "Back Door Wainscoting Paint After",
       "desc": "After \u2022 Paint + finish",
-      "category": "wainscoting","paint",
+      "category": ["wainscoting","paint"],
       "image": "assets/img/gallery/back-door-wainscotting-paint-after.webp"
     },
     {
       "title": "Bathroom Wallpaper Wainscoting Paint After",
       "desc": "After \u2022 Paint + finish \u2022 Wallpaper + wainscoting",
-      "category": "wainscoting","feature wall","paint"
+      "category": ["wainscoting","feature wall","paint"],
       "image": "assets/img/gallery/bathroom-wallpaper-wainscotting-paint-after.webp"
     },
     {
