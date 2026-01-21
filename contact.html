@@ -38,25 +38,15 @@
         <div class="card">
           <div class="small" style="font-weight:900;color:var(--text)">Email</div>
           <div class="small">
-            <a class="js-email"
-               data-user="accentsandalder"
-               data-domain="gmail"
-               data-tld="com"
-               href="#"
-               rel="nofollow"
-               aria-label="Email Accents &amp; Alder"></a>
-            <noscript>accentsandalder [at] gmail [dot] com</noscript>
+            <a class="js-email" data-email="accents.alder.design@gmail.com" href="#" rel="nofollow" aria-label="Email Accents &amp; Alder"></a>
+            <noscript>accents.alder.design [at] gmail [dot] com</noscript>
           </div>
 
           <hr class="sep" />
 
           <div class="small" style="font-weight:900;color:var(--text)">Phone</div>
           <div class="small">
-            <a class="js-phone"
-               data-phone="4036181841"
-               href="#"
-               rel="nofollow"
-               aria-label="Call Accents &amp; Alder"></a>
+            <a class="js-phone" data-phone="4036181841" href="#" rel="nofollow" aria-label="Call Accents &amp; Alder"></a>
             <noscript>(403) 618-1841</noscript>
           </div>
 
@@ -65,20 +55,10 @@
           <div class="small" style="font-weight:900;color:var(--text)">Best next step</div>
           <div class="small">For project requests, the consult form is best.</div>
 
-          <div style="margin-top:12px">
+          <div class="btn-row" style="margin-top:12px">
             <a class="btn btn-primary" href="consult.html">Book a Consult</a>
-          </div>
-
-          <div style="margin-top:10px">
-            <a class="btn" href="https://www.instagram.com/accents_and_alder_design/" target="_blank" rel="noopener nofollow">
-              Message on Instagram
-            </a>
-          </div>
-
-          <div style="margin-top:10px">
-            <a class="btn" href="https://www.facebook.com/profile.php?id=61586671831249" target="_blank" rel="noopener nofollow">
-              Visit Facebook
-            </a>
+            <a class="btn btn-sm" href="https://www.instagram.com/accents_and_alder_design/" target="_blank" rel="noopener nofollow"><svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><path d='M7 3.5H17C19.2 3.5 21 5.3 21 7.5V16.5C21 18.7 19.2 20.5 17 20.5H7C4.8 20.5 3 18.7 3 16.5V7.5C3 5.3 4.8 3.5 7 3.5Z' stroke='currentColor' stroke-width='1.6'/><path d='M12 16.2C14.3 16.2 16.2 14.3 16.2 12C16.2 9.7 14.3 7.8 12 7.8C9.7 7.8 7.8 9.7 7.8 12C7.8 14.3 9.7 16.2 12 16.2Z' stroke='currentColor' stroke-width='1.6'/><path d='M17.4 6.6H17.41' stroke='currentColor' stroke-width='3' stroke-linecap='round'/></svg>Instagram</a>
+            <a class="btn btn-sm" href="https://www.facebook.com/profile.php?id=61586671831249" target="_blank" rel="noopener nofollow"><svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><path d='M14 8.5V7.1C14 6.3 14.6 5.7 15.4 5.7H17V3.5H15.2C13.0 3.5 11.2 5.3 11.2 7.5V8.5H9V11H11.2V20.5H14V11H16.6L17 8.5H14Z' fill='currentColor'/></svg>Facebook</a>
           </div>
         </div>
 
@@ -92,48 +72,6 @@
       </div>
     </div>
   </main>
-<!-- Bot-resistant email/phone render (supports multiple elements per page) -->
-  <script>
-  (function () {
-    function formatPhone(digits) {
-      return (digits || '').replace(/^(\d{3})(\d{3})(\d{4})$/, '($1) $2-$3');
-    }
-
-    var emailEls = document.querySelectorAll('.js-email');
-    for (var i = 0; i < emailEls.length; i++) {
-      (function (el) {
-        el.addEventListener('click', function (e) {
-          if (el.getAttribute('href') === '#') e.preventDefault();
-        });
-
-        var user = el.getAttribute('data-user') || '';
-        var domain = el.getAttribute('data-domain') || '';
-        var tld = el.getAttribute('data-tld') || '';
-        if (user && domain && tld) {
-          var addr = user + '@' + domain + '.' + tld;
-          el.textContent = addr;
-          el.href = 'mailto:' + addr;
-        }
-      })(emailEls[i]);
-    }
-
-    var phoneEls = document.querySelectorAll('.js-phone');
-    for (var j = 0; j < phoneEls.length; j++) {
-      (function (el) {
-        el.addEventListener('click', function (e) {
-          if (el.getAttribute('href') === '#') e.preventDefault();
-        });
-
-        var digits = (el.getAttribute('data-phone') || '').replace(/\D/g, '');
-        if (digits) {
-          el.textContent = formatPhone(digits);
-          el.href = 'tel:' + digits;
-        }
-      })(phoneEls[j]);
-    }
-  })();
-  </script>
-  
   <footer class="footer">
     <div class="container footer-inner">
       <a class="brandline" href="index.html"><span class="mark" aria-hidden="true"></span><span>ACCENTS &amp; ALDER</span></a>
@@ -147,14 +85,17 @@
           <a href="contact.html">Contact</a>
           <a href="consult.html">Book a Consult</a>
         </div>
-        <div class="footer-meta" style="margin-top:10px">
-          <span>Calgary, AB • © <span data-year></span></span>
-          <span class="sep" aria-hidden="true"></span>
-          <a class="email-link" data-email="accents.alder.design@gmail.com" href="#">Email</a>
-          <a class="phone-link" data-phone="14036127858" href="#">Phone</a>
-          <a class="ig-link" data-user="accents_and_alder_design" href="#" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://www.facebook.com/profile.php?id=61586671831249" target="_blank" rel="noopener">Facebook</a>
-        </div>
+        <div class="footer-meta">
+  <span>Calgary, AB • © <span data-year></span></span>
+  <span class="sep" aria-hidden="true"></span>
+  <div class="chips" aria-label="Contact links">
+    <a class="chip js-email" data-email="accents.alder.design@gmail.com" data-display="label" href="#" rel="nofollow"><svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><path d='M4 6.5H20V17.5H4V6.5Z' stroke='currentColor' stroke-width='1.6' stroke-linejoin='round'/><path d='M4.5 7.2L12 12.6L19.5 7.2' stroke='currentColor' stroke-width='1.6' stroke-linejoin='round'/></svg>Email</a>
+    <a class="chip js-phone" data-phone="4036181841" data-display="label" href="#" rel="nofollow"><svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><path d='M7.5 3.8H9.6L10.7 8.5L9.1 9.9C10.6 12.7 12.8 14.9 15.6 16.4L17 14.8L21.7 15.9V18.0C21.7 19.1 20.8 20.0 19.7 20.0C11.0 20.0 4.0 13.0 4.0 4.3C4.0 3.2 4.9 2.3 6.0 2.3H7.5V3.8Z' stroke='currentColor' stroke-width='1.6' stroke-linejoin='round'/></svg>Phone</a>
+    <a class="chip" href="https://www.instagram.com/accents_and_alder_design/" target="_blank" rel="noopener"><svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><path d='M7 3.5H17C19.2 3.5 21 5.3 21 7.5V16.5C21 18.7 19.2 20.5 17 20.5H7C4.8 20.5 3 18.7 3 16.5V7.5C3 5.3 4.8 3.5 7 3.5Z' stroke='currentColor' stroke-width='1.6'/><path d='M12 16.2C14.3 16.2 16.2 14.3 16.2 12C16.2 9.7 14.3 7.8 12 7.8C9.7 7.8 7.8 9.7 7.8 12C7.8 14.3 9.7 16.2 12 16.2Z' stroke='currentColor' stroke-width='1.6'/><path d='M17.4 6.6H17.41' stroke='currentColor' stroke-width='3' stroke-linecap='round'/></svg>Instagram</a>
+    <a class="chip" href="https://www.facebook.com/profile.php?id=61586671831249" target="_blank" rel="noopener"><svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' aria-hidden='true'><path d='M14 8.5V7.1C14 6.3 14.6 5.7 15.4 5.7H17V3.5H15.2C13.0 3.5 11.2 5.3 11.2 7.5V8.5H9V11H11.2V20.5H14V11H16.6L17 8.5H14Z' fill='currentColor'/></svg>Facebook</a>
+  </div>
+</div>
+
       </div>
     </div>
   </footer>

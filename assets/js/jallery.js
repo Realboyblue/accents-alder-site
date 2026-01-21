@@ -48,11 +48,19 @@ function el(tag, attrs = {}, children = []){
     lbImg.alt = item.title;
     lbTitle.textContent = item.title;
     lbDesc.textContent = item.desc || "";
-    lightbox.setAttribute("open", "");
+    if (typeof lightbox.showModal === "function") {
+      try{ lightbox.showModal(); }catch(e){ lightbox.setAttribute("open", ""); }
+    } else {
+      lightbox.setAttribute("open", "");
+    }
   }
 
   function closeLightbox(){
-    lightbox.removeAttribute("open");
+    if (typeof lightbox.close === "function") {
+      try{ lightbox.close(); }catch(e){ lightbox.removeAttribute("open"); }
+    } else {
+      lightbox.removeAttribute("open");
+    }
     lbImg.src = "";
   }
 
