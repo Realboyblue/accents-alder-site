@@ -47,4 +47,22 @@
       el.href = "tel:" + digits;
     })(phoneEls[j]);
   }
+
+  // Active nav link
+  try{
+    var path = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    var nav = document.querySelectorAll('.navlinks a[href]');
+    for (var i=0;i<nav.length;i++){
+      var href = (nav[i].getAttribute('href')||'').toLowerCase();
+      if (!href || href.indexOf('http')===0) continue;
+      if (href === path){
+        nav[i].className = (nav[i].className + ' active').trim();
+      }
+      // Special case: root -> index.html
+      if ((path==='' || path==='/' ) && href==='index.html'){
+        nav[i].className = (nav[i].className + ' active').trim();
+      }
+    }
+  }catch(e){}
+
 })();
