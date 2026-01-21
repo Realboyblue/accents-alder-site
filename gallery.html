@@ -34,7 +34,7 @@
     <div class="container">
       <h1 class="page-title">Gallery</h1>
       <p class="lead page-lead">
-        Our most up-to-date project photos are on Instagram. We’re also building an on-site gallery for easier browsing.
+        Our most up-to-date project photos are on Instagram. We’re also hosting a curated on-site gallery below for easier browsing.
       </p>
 
       <div class="grid grid-2">
@@ -62,11 +62,36 @@
           <div class="small" style="margin-top:8px">Wainscoting • Board &amp; Batten • Trim &amp; Crown • Interior Paint</div>
           <hr class="sep" />
           <div class="small" style="font-weight:900;color:var(--text)">On-site gallery</div>
-          <div class="small">We’re curating a cleaner, faster gallery here soon (organized by room and project type).</div>
+          <div class="small">Browse a curated set of projects below (more categories and updates coming soon).</div>
         </div>
       </div>
     </div>
   </main>
+
+
+  <section class="section">
+    <div class="container" data-gallery>
+      <h2 class="section-title" style="margin-top:0">On‑site gallery</h2>
+      <p class="lead" style="max-width:72ch">
+        A curated selection of recent work—fast to browse, easy to filter, and kept lightweight for the web.
+      </p>
+
+      <div class="filters" data-filters aria-label="Gallery filters"></div>
+      <div class="gallery-grid" data-grid aria-label="Project gallery"></div>
+
+      <dialog class="lightbox" data-lightbox aria-label="Image viewer">
+        <button class="lb-close" type="button" data-lb-close aria-label="Close">×</button>
+        <div class="lb-inner">
+          <img class="lb-img" data-lb-img alt="" />
+          <div class="lb-meta">
+            <div class="lb-title" data-lb-title></div>
+            <div class="lb-desc" data-lb-desc></div>
+          </div>
+        </div>
+      </dialog>
+    </div>
+  </section>
+
 
   
   <footer class="footer">
@@ -93,6 +118,7 @@
       </div>
     </div>
   </footer>
+  <script src="assets/js/jallery.js"></script>
   <script src="assets/js/site.js"></script>
 </body>
 </html>

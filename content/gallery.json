@@ -1,0 +1,136 @@
+{
+  "categories": [
+    {
+      "key": "all",
+      "label": "All"
+    },
+    {
+      "key": "wainscoting",
+      "label": "Wainscoting"
+    },
+    {
+      "key": "feature",
+      "label": "Feature Walls"
+    },
+    {
+      "key": "moulding",
+      "label": "Moulding & Trim"
+    },
+    {
+      "key": "outdoor",
+      "label": "Outdoor"
+    },
+    {
+      "key": "details",
+      "label": "Details"
+    },
+    {
+      "key": "other",
+      "label": "Closets & Built-ins"
+    }
+  ],
+  "items": [
+    {
+      "title": "Accent Table",
+      "desc": "",
+      "category": "details",
+      "image": "assets/img/gallery/accent-table.webp"
+    },
+    {
+      "title": "Back Door Wainscoting Paint After",
+      "desc": "After \u2022 Paint + finish",
+      "category": "wainscoting",
+      "image": "assets/img/gallery/back-door-wainscotting-paint-after.webp"
+    },
+    {
+      "title": "Bathroom Wallpaper Wainscoting Paint After",
+      "desc": "After \u2022 Paint + finish \u2022 Wallpaper + wainscoting",
+      "category": "wainscoting",
+      "image": "assets/img/gallery/bathroom-wallpaper-wainscotting-paint-after.webp"
+    },
+    {
+      "title": "Bedroom Wainscoting Clean",
+      "desc": "",
+      "category": "wainscoting",
+      "image": "assets/img/gallery/bedroom-wainscotting-clean-pro.webp"
+    },
+    {
+      "title": "Closet After",
+      "desc": "After",
+      "category": "other",
+      "image": "assets/img/gallery/closet-after.webp"
+    },
+    {
+      "title": "Closet Before",
+      "desc": "Before",
+      "category": "other",
+      "image": "assets/img/gallery/closet-before-pro.webp"
+    },
+    {
+      "title": "Front Door Wainscoting Before",
+      "desc": "Before",
+      "category": "wainscoting",
+      "image": "assets/img/gallery/front-door-wainscotting-before.webp"
+    },
+    {
+      "title": "Front Door Wainscoting Paint After",
+      "desc": "After \u2022 Paint + finish",
+      "category": "wainscoting",
+      "image": "assets/img/gallery/front-door-wainscotting-paint-after.webp"
+    },
+    {
+      "title": "Kitchen Moulding After",
+      "desc": "After",
+      "category": "moulding",
+      "image": "assets/img/gallery/kitchen-moulding-after.webp"
+    },
+    {
+      "title": "Kitchen Moulding No Paint",
+      "desc": "Paint + finish \u2022 Installed (pre-paint)",
+      "category": "moulding",
+      "image": "assets/img/gallery/kitchen-moulding-no-paint.webp"
+    },
+    {
+      "title": "Kitchen Moulding Paint After",
+      "desc": "After \u2022 Paint + finish",
+      "category": "moulding",
+      "image": "assets/img/gallery/kitchen-moulding-paint-after.webp"
+    },
+    {
+      "title": "Kitchen Moulding Paint Before",
+      "desc": "Before \u2022 Paint + finish",
+      "category": "moulding",
+      "image": "assets/img/gallery/kitchen-moulding-paint-before.webp"
+    },
+    {
+      "title": "Patio After",
+      "desc": "After",
+      "category": "outdoor",
+      "image": "assets/img/gallery/patio-after.webp"
+    },
+    {
+      "title": "Patio Base",
+      "desc": "",
+      "category": "outdoor",
+      "image": "assets/img/gallery/patio-base-web.webp"
+    },
+    {
+      "title": "Pony Wall After",
+      "desc": "After",
+      "category": "feature",
+      "image": "assets/img/gallery/pony-wall-after.webp"
+    },
+    {
+      "title": "Pony Wall Straight",
+      "desc": "Leveled/straightened",
+      "category": "feature",
+      "image": "assets/img/gallery/pony-wall-straight.webp"
+    },
+    {
+      "title": "Wainscoting Feature Wall After",
+      "desc": "After",
+      "category": "feature",
+      "image": "assets/img/gallery/wainscotting-feature-wall-after.webp"
+    }
+  ]
+}
