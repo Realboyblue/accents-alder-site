@@ -38,13 +38,13 @@
     },
     {
       "title": "Back Door Wainscoting Finished",
-      "desc": "After \u2022 Wainscotting + Paint",
+      "desc": "Wainscotting + Paint",
       "category": "wainscoting",
       "image": "assets/img/gallery/back-door-wainscotting-paint-after.webp"
     },
     {
       "title": "Bathroom Finished",
-      "desc": "After \u2022 Wallpaper + Wainscoting + Paint",
+      "desc": "Wallpaper + Wainscoting + Paint",
       "category": "feature wall",
       "image": "assets/img/gallery/bathroom-wallpaper-wainscotting-paint-after.webp"
     },
@@ -79,26 +79,26 @@
       "image": "assets/img/gallery/front-door-wainscotting-paint-after.webp"
     },
     {
-      "title": "Kitchen Doorway After",
-      "desc": "After \u2022 Moulding + Paint",
+      "title": "Kitchen Doorway Finished",
+      "desc": "Moulding + Paint",
       "category": "moulding",
       "image": "assets/img/gallery/kitchen-moulding-after.webp"
     },
     {
-      "title": "Kitchen Doorway Inprogress",
-      "desc": "Inprogress \u2022 Moulding",
+      "title": "Kitchen Doorway In-progress",
+      "desc": "Moulding",
       "category": "moulding",
       "image": "assets/img/gallery/kitchen-moulding-no-paint.webp"
     },
     {
       "title": "Kitchen Doorway After",
-      "desc": "After \u2022 Moulding + Paint",
+      "desc": "Moulding + Paint",
       "category": "moulding",
       "image": "assets/img/gallery/kitchen-moulding-paint-after.webp"
     },
     {
       "title": "Kitchen Moulding Before",
-      "desc": "Before \u2022 Paint + finish",
+      "desc": "Paint + finish",
       "category": "moulding",
       "image": "assets/img/gallery/kitchen-moulding-paint-before.webp"
     },
@@ -116,7 +116,7 @@
     },
     {
       "title": "Pony Wall After",
-      "desc": "After \u2022 Moulding + Paint",
+      "desc": "Moulding + Paint",
       "category": "moulding",
       "image": "assets/img/gallery/pony-wall-after.webp"
     },
