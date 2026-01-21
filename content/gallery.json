@@ -21,10 +21,6 @@
       "label": "Outdoor"
     },
     {
-      "key": "paint",
-      "label": "Paint"
-    },
-    {
       "key": "details",
       "label": "Details"
     },
@@ -43,13 +39,13 @@
     {
       "title": "Back Door Wainscoting Paint After",
       "desc": "After \u2022 Paint + finish",
-      "category": ["wainscoting","paint"],
+      "category": "wainscoting",
       "image": "assets/img/gallery/back-door-wainscotting-paint-after.webp"
     },
     {
       "title": "Bathroom Wallpaper Wainscoting Paint After",
       "desc": "After \u2022 Paint + finish \u2022 Wallpaper + wainscoting",
-      "category": ["wainscoting","feature wall","paint"],
+      "category": "feature wall",
       "image": "assets/img/gallery/bathroom-wallpaper-wainscotting-paint-after.webp"
     },
     {
@@ -121,17 +117,17 @@
     {
       "title": "Pony Wall After",
       "desc": "After",
-      "category": "feature",
+      "category": "moulding",
       "image": "assets/img/gallery/pony-wall-after.webp"
     },
     {
       "title": "Pony Wall Straight",
       "desc": "Leveled/straightened",
-      "category": "feature",
+      "category": "moulding",
       "image": "assets/img/gallery/pony-wall-straight.webp"
     },
     {
-      "title": "Wainscoting Feature Wall After",
+      "title": "Living Room Feature Wall",
       "desc": "After",
       "category": "feature",
       "image": "assets/img/gallery/wainscotting-feature-wall-after.webp"
