@@ -263,8 +263,10 @@ input:focus, textarea:focus, select:focus{box-shadow: 0 0 0 3px rgba(199,163,86,
 }
 .btn:hover{transform:translateY(-1px);background:rgba(255,255,255,.06)}
 .btn-primary{
-  border-color:rgba(199,163,86,.65);
-  background:rgba(199,163,86,.14);
+  border-color:rgba(199,163,86,.78);
+  background:rgba(199,163,86,.22);
+  color: var(--text);
+  font-weight:700;
 }
 .btn-primary:hover{background:rgba(199,163,86,.20)}
 .btn svg{width:16px;height:16px;opacity:.9}
@@ -290,6 +292,31 @@ input:focus, textarea:focus, select:focus{box-shadow: 0 0 0 3px rgba(199,163,86,
   background:
     radial-gradient(900px 600px at 10% 10%, rgba(255,255,255,.08), transparent 55%),
     linear-gradient(90deg, rgba(7,27,24,.98), rgba(7,27,24,.90) 60%, rgba(7,27,24,.55));
+}
+
+.logo-hero{
+  width:92px;height:92px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  box-shadow: var(--shadow-soft);
+  margin:0 0 14px;
+  background:#fff;
+}
+.team{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+.team img{
+  width:160px;
+  border-radius:18px;
+  border:1px solid var(--border);
+  box-shadow: var(--card-shadow);
+  object-fit:cover;
+}
+@media (max-width: 980px){
+  .team{flex-direction:column}
+  .team img{width:100%}
+  .logo-hero{width:76px;height:76px}
 }
 .hero-left h1{
   margin:0 0 14px;
@@ -368,7 +395,7 @@ input:focus, textarea:focus, select:focus{box-shadow: 0 0 0 3px rgba(199,163,86,
   font-weight:600;
   font-size:2.2rem;
   margin:0 0 18px;
-  color: var(--text-on-light);
+  color: var(--text);
 }
 .section-kicker{
   display:flex; align-items:center; justify-content:center;
@@ -632,7 +659,23 @@ input:focus, textarea:focus, select:focus{box-shadow: 0 0 0 3px rgba(199,163,86,
 
 
 /* Responsive */
+
+/* Form checklists */
+.checklist{display:grid;gap:8px;margin-top:8px}
+.check{display:flex;gap:10px;align-items:flex-start;color:var(--text);font-weight:600}
+.check input{width:auto; margin-top:3px}
+.form .btn{width:100%}
+
 @media (max-width: 980px){
+  /* Mobile topbar: keep it compact */
+  .nav{padding:10px 0; gap:12px}
+  .brand span:last-child{font-size:.98rem}
+  .mark{width:28px;height:28px;flex:0 0 28px}
+  .navlinks{display:flex;flex-wrap:wrap;gap:10px}
+  .navlinks a{padding:8px 10px}
+  /* Keep the most important links + CTA to avoid a 3-line header on phones */
+  .navlinks a[href="service-area.html"],
+  .navlinks a[href="faq.html"]{display:none}
   .hero-grid{grid-template-columns:1fr; min-height:auto}
   .hero-left{padding:42px 22px}
   .hero-right{min-height:320px}
