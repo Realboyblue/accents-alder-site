@@ -411,10 +411,10 @@ input:focus, textarea:focus, select:focus{box-shadow: 0 0 0 3px rgba(199,163,86,
 }
 
 .section-kicker .kicker-logo{
-  width: clamp(90px, 10vw, 150px);
-  height:auto;
-  display:block;
-  opacity:.96;
+  width: min(260px, 72vw);   /* big on desktop, scales down on phones */
+  height: auto;
+  display: block;
+  opacity: .96;
   filter: drop-shadow(0 1px 0 rgba(0,0,0,.06));
 }
 
